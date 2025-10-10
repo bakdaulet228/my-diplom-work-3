@@ -1,0 +1,71 @@
+class Patient:
+    def __init__(self, name, age):  
+        self.name = name
+        self.age = age             
+        self.records = []           
+
+    def add_analysis(self, analysis):
+        self.records.append(("Анализ", analysis))  
+
+    def add_treatment(self, treatment):
+        self.records.append(("Лечение", treatment))
+
+    def show_card(self):  
+        print(f"\nЭлектронная карта пациента: {self.name}, {self.age} лет") 
+        if not self.records:
+            print("Записей пока нет.")  
+        else:
+            for entry_type, entry in self.records:
+                print(f"{entry_type}: {entry}")
+    else:
+        for i. (rtype, text) in enumerate(self.records,start=1):
+            print(f"{i}. {rtype}: {text}")
+            #Простое меню
+            def main ():
+                patients= {}
+                
+                while True:
+                    print("\n===Медицинское ПО=")
+                    print("1.Зарегистрировать пациента")
+                    print("2.Добавить анализ")
+                    print("3.Назначить лечение")
+                print("4.Показать карту пациента")
+                print("0.Выход")
+                choice= input("Выберите действие:")
+                if choice=="1":
+                    name=input("Имя пациента:")
+                    age=input("Возраст:")
+                    patients[name]=Patientname,age)
+                    print(f"Пациент (name) успешно зарегистрирован!")
+                    
+              elif choice=="2":
+            name=input("Введите имя пациента")
+            if name in patients:
+                analysis=input("Введите результат анализа:")
+                patients(name)add_analysis(analysis)
+                print("Анализ добавлен!")
+            else
+                print("Пациент не найден.")
+                elif choice=="3":
+                name=input("Введите имя пациента:")
+                patients(name).add_treatment(treatment)
+                print("Назначение добавлено!")
+            else
+                print("Пациент не найден.")
+                
+            elif choice =="4":
+                name= input("Введите имя пациента:")
+            if name patients:
+                patients(name) show_card()
+            else
+            
+            print("Пациент не найден.")
+        elif choice=="0"
+               print("Пациент не найден.")
+               break
+           else:
+               print("Неверные выбор.Попробуйте снова.")
+             if_name_
+            
+                
+                
